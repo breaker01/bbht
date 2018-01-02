@@ -1,6 +1,6 @@
 sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get install git
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 sudo apt-get install -y python3-pip
 apt install python-pip
 sudo apt-get install libcurl4-openssl-dev
