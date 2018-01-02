@@ -1,48 +1,96 @@
+echo "Updating repos and OS, please wait."
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
-sudo apt-get install -y python3-pip
-apt install python-pip
-sudo apt-get install libcurl4-openssl-dev
-sudo apt-get install libssl-dev
-sudo apt-get install jq
-sudo apt-get install ruby-full
-sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+echo "Repos and OS updated!"
 
+echo "Installing libraries, Ruby, PHP, etc..."
+sudo apt-get install python3-pip -y
+sudo apt install python-pip -y
+sudo apt-get install libcurl4-openssl-dev -y
+sudo apt-get install libssl-dev -y
+sudo apt-get install jq -y
+sudo apt-get install ruby-full -y
+sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev -y
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev -y
+sudo apt-get install php -y
+echo "Libraries, Ruby, PHP, etc installed!"
 
-#Don't forget to set up AWS credentials!
-echo "Don't forget to set up AWS credentials!"
-apt install awscli
-echo "Don't forget to set up AWS credentials!"
+echo "Ready to install tools..."
 
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev
-sudo apt-get install python-setuptools
+echo "Installing awscli..."
+pip install awscli
+echo "AWS CLI installed!"
+echo "Don't forget to set up AWS credentials using the `aws configure` command!"
 
-#create a tools folder in ~/
-mkdir ~/tools
+cd /opt
+
+echo "Installing 230-OOB..."
+sudo git clone https://github.com/sxcurity/230-OOB
+sudo chmod +x 230-OOB/230.py
+echo "230-OOB installed!"
+
+echo "Installing Alive-Host..."
+sudo git clone https://github.com/sxcurity/alive-host
+sudo chmod +x alive-host/alive.sh
+echo "Alive-Host installed!"
+
+echo "Installing Tomcat-CVE-2017-12617..."
+sudo git clone https://github.com/cyberheartmi9/CVE-2017-12617
+sudo chmod +x CVE-2017-12617/tomcat-cve-2017-12617.py
+echo "Tomcat-CVE-2017-12617 installed!"
+
+echo "Installing Dirsearch..."
+sudo git clone https://github.com/maurosoria/dirsearch
+echo "Dirsearch installed!"
+
+echo "Installing DomainWatch..."
+sudo git clone https://github.com/ebelties/DomainWatch
+sudo chmod +x DomainWatch/domainwatch.sh
+echo "DomainWatch installed!"
+
+echo "Installing GitTools..."
+sudo git clone https://github.com/internetwache/GitTools
+echo "GitTools installed!"
+
+#echo "Installing GoBuster...!"
+#sudo git clone https://github.com/OJ/gobuster
+#sudo apt-get install golang-go
+#sudo wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz
+#sudo tar -C /usr/local/ -xzf go1.9.2.linux-amd64.tar.gz
+#cd gobuster
+
+echo "Installing HostileSubBruteforcer..."
+sudo git clone https://github.com/nahamsec/HostileSubBruteforcer
+sudo chmod +x HostileSubBruteforcer/sub_brute.rb
+echo "HostileSubBruteForcer installed!"
+
+echo "Installing JSParser..."
+sudo git clone https://github.com/nahamsec/JSParser.git
+sudo chmod +x JSParser/*.py
+cd JSParser
+sudo python setup.py install
 cd ~/tools/
+echo "JSParser installed!"
 
+echo "Installing Parameth..."
+echo "Parameth installed!"
 
-echo "installing JSParser"
-git clone https://github.com/nahamsec/JSParser.git
-cd JSParser*
-python setup.py install
-cd ~/tools/
-echo "done"
+echo "Installing Liffy..."
+sudo git clone https://github.com/hvqzao/liffy
+sudo chmod +x liffy/*.py
 
 echo "installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
 pip install -r requirements.txt
-cd ~/tools/
+cd ../
 echo "done"
-
 
 echo "installing teh_s3_bucketeers"
 git clone https://github.com/tomdev/teh_s3_bucketeers.git
 cd ~/tools/
 echo "done"
-
 
 echo "installing wpscan"
 git clone https://github.com/wpscanteam/wpscan.git
@@ -56,7 +104,6 @@ git clone https://github.com/maurosoria/dirsearch.git
 cd ~/tools/
 echo "done"
 
-
 echo "installing lazys3"
 git clone https://github.com/nahamsec/lazys3.git
 cd ~/tools/
@@ -64,14 +111,6 @@ echo "done"
 
 echo "installing virtual host discovery"
 git clone https://github.com/jobertabma/virtual-host-discovery.git
-cd ~/tools/
-echo "done"
-
-echo "installing bash_profile aliases from recon_profile"
-git clone https://github.com/nahamsec/recon_profile.git
-cd recon_profile
-cat bash_profile >> ~/.bash_profile
-source ~/.bash_profile
 cd ~/tools/
 echo "done"
 
@@ -87,6 +126,5 @@ cd ~/tools/
 echo "done"
 
 
-echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
+echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in /opt"
 ls -la
-echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
