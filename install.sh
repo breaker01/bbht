@@ -73,17 +73,40 @@ sudo python setup.py install
 cd ~/tools/
 echo "JSParser installed!"
 
-echo "Installing Parameth..."
-echo "Parameth installed!"
-
 echo "Installing Liffy..."
 sudo git clone https://github.com/hvqzao/liffy
 sudo chmod +x liffy/*.py
 
-echo "installing Sublist3r"
-git clone https://github.com/aboul3la/Sublist3r.git
-cd Sublist3r*
-pip install -r requirements.txt
+echo "Installing Parameth..."
+sudo git clone https://github.com/maK-/parameth
+echo "Parameth installed!"
+
+echo "Installing Relative-URL-Extractor..."
+sudo git clone https://github.com/jobertabma/relative-url-extractor
+sudo chmod +x relative-url-extractor/*.rb
+echo"Relative-URL-Extractor installed!"
+
+echo "Installing S3Cruze..."
+sudo git clone https://github.com/JR0ch17/S3Cruze/
+sudo chmod +x S3Cruze/*.py
+echo "S3Cruze installed!"
+
+echo "Cloning the SecLists repo..."
+sudo git clone https://github.com/danielmiessler/SecLists
+echo "SecLists cloned!"
+
+echo "Installing SQLmap..."
+sudo git clone https://github.com/sqlmapproject/sqlmap
+echo "SQLmap installed!"
+
+echo "Installing struts-pwn..."
+sudo git clone https://github.com/mazen160/struts-pwn
+echo "Struts-pwn installed!"
+
+echo "Installing Sublist3r"
+git clone https://github.com/aboul3la/Sublist3r
+cd Sublist3r/
+sudo pip install -r requirements.txt
 cd ../
 echo "done"
 
