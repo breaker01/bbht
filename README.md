@@ -38,7 +38,10 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 
 
 ## Installing
-- git clone https://github.com/JR0ch17/bbht
-- cd bbht/
-- chmod +x install.sh
-- ./install.sh
+Run the following commands:
+```
+git clone https://github.com/JR0ch17/bbht
+cd bbht/
+chmod +x install.sh
+./install.sh
+```
