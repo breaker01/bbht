@@ -2,7 +2,7 @@
 
 Bug Bounty Hunting Tools is a script to install some of the most popular tools used while doing recon and/or exploiting vulnerabilities in bug bounty programs.
  
-# Tools
+## Tools
 
 - [230-OOB](https://github.com/sxcurity/230-OOB)
 - [Alive-Host](https://github.com/sxcurity/alive-host)
@@ -37,7 +37,7 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [WPScan](https://github.com/wpscanteam/wpscan)
 
 
-# Installing
+## Installing
 - git clone https://github.com/JR0ch17/bbht
 - cd bbht/
 - chmod +x install.sh
