@@ -1,6 +1,6 @@
 # BBHT
 
-Bug Bounty Hunting Tools is a script to install the most popular recon tools used while looking for vulnerabilities in a bug bounty program.
+Bug Bounty Hunting Tools is a script to install some of the most popular tools used while doing recon and/or exploiting vulnerabilities in bug bounty programs.
  
 # Tools
 
@@ -14,7 +14,6 @@ Bug Bounty Hunting Tools is a script to install the most popular recon tools use
 - [Dirsearch](https://github.com/maurosoria/dirsearch)
 - [DomainWatch](https://github.com/ebelties/DomainWatch)
 - [DroopeScan](https://github.com/droope/droopescan)
-- [GitRob](https://github.com/michenriksen/gitrob)
 - [GitTools](https://github.com/internetwache/GitTools)
 - [HostileSubBruteforcer](https://github.com/nahamsec/HostileSubBruteforcer)
 - [JoomScan](https://github.com/rezasp/joomscan)
@@ -24,7 +23,7 @@ Bug Bounty Hunting Tools is a script to install the most popular recon tools use
 - [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
 - [Nikto](https://cirt.net/nikto)
 - [Nmap](https://nmap.org)
-- [Parameth](ttps://github.com/maK-/parameth)
+- [Parameth](https://github.com/maK-/parameth)
 - [Relative-URL-Extractor](https://github.com/jobertabma/relative-url-extractor)
 - [S3Cruze](https://github.com/JR0ch17/S3Cruze)
 - [SQLMap](https://github.com/sqlmapproject/sqlmap)
