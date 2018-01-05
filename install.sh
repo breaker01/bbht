@@ -4,15 +4,15 @@ sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 echo "Repos and OS updated!"
 
-echo "Installing libraries, Ruby, PHP, etc..."
+echo "Installing libraries, Ruby, PHP, Perl, etc..."
 sudo apt-get install python3-pip -y
-sudo apt install python-pip -y
+sudo apt-get install python-pip -y
 sudo apt-get install libcurl4-openssl-dev -y
 sudo apt-get install libssl-dev -y
 sudo apt-get install jq -y
 sudo apt-get install ruby-full -y
-sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev -y
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev -y
+sudo apt-get install libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev -y
+sudo apt-get install build-essential libffi-dev python-dev -y
 sudo apt-get install php -y
 echo "Libraries, Ruby, PHP, etc installed!"
 
@@ -99,6 +99,7 @@ echo "JS-Scan installed!"
 echo "Installing Liffy..."
 sudo git clone https://github.com/hvqzao/liffy
 sudo chmod +x liffy/*.py
+echo "Liffy installed!"
 
 echo "Installing LinkFinder..."
 sudo git clone https://github.com/GerbenJavado/LinkFinder
@@ -160,7 +161,7 @@ git clone https://github.com/aboul3la/Sublist3r
 cd Sublist3r/
 sudo pip install -r requirements.txt
 cd ../
-echo "done"
+echo "Sublist3r installed!"
 
 echo "Installing Tomcat-CVE-2017-12617..."
 sudo git clone https://github.com/cyberheartmi9/CVE-2017-12617
