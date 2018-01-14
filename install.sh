@@ -128,6 +128,7 @@ echo "Nmap installed!"
 
 echo "Installing Parameth..."
 sudo git clone https://github.com/maK-/parameth
+sudo pip install -r parameth/requirements.txt
 echo "Parameth installed!"
 
 echo "Installing Relative-URL-Extractor..."
