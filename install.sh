@@ -47,6 +47,10 @@ sudo pip install httplib2 requests
 sudo git clone https://github.com/auraltension/c5scan
 echo "C5Scan installed!"
 
+echo "Installing Clusterd..."
+sudo git clone https://github.com/hatRiot/clusterd
+echo "Clustered installed!"
+
 echo "Installing CMSFuzz..."
 sudo git clone https://github.com/nahamsec/CMSFuzz
 sudo chmod +x CMSFuzz/dirbf.rb
@@ -63,6 +67,18 @@ echo "DomainWatch installed!"
 
 echo "Installing DroopeScan..."
 sudo pip install droopescan
+echo "DroopeScan installed!"
+
+echo "Installing EyeWitness..."
+sudo git clone https://github.com/ChrisTruncer/EyeWitness
+echo "EyeWitness installed!"
+
+echo "Installing Fuxsploider..."
+sudo git clone https://github.com/almandin/fuxploider
+cd fuxploider
+sudo pip3 install -r requirements.txt
+cd ../
+echo "Fuxploider installed!"
 
 echo "Installing GitTools..."
 sudo git clone https://github.com/internetwache/GitTools
@@ -95,11 +111,6 @@ echo "JSParser installed!"
 echo "Installing JS-Scan..."
 sudo git clone cd https://github.com/zseano/JS-Scan
 echo "JS-Scan installed!"
-
-echo "Installing Liffy..."
-sudo git clone https://github.com/hvqzao/liffy
-sudo chmod +x liffy/*.py
-echo "Liffy installed!"
 
 echo "Installing LinkFinder..."
 sudo git clone https://github.com/GerbenJavado/LinkFinder
@@ -169,6 +180,10 @@ sudo git clone https://github.com/cyberheartmi9/CVE-2017-12617
 sudo chmod +x CVE-2017-12617/tomcat-cve-2017-12617.py
 echo "Tomcat-CVE-2017-12617 installed!"
 
+echo "Installing Tplmap..."
+sudo git clone https://github.com/epinna/tplmap
+echo "Tplmap installed!"
+
 echo "Installing TruffleHog..."
 sudo pip install trufflehog
 echo "TruffleHog installed!"
@@ -187,8 +202,23 @@ echo "Installing WPScan"
 sudo git clone https://github.com/wpscanteam/wpscan
 cd wpscan/
 sudo gem install bundler && sudo bundle install --without test
-cd ..
+cd ../
 echo "WPScan installed!"
+
+echo "Installing XSStrike..."
+sudo git clone git clone https://github.com/UltimateHackers/XSStrike
+cd XSStrike/
+sudo pip install -r requirements.txt
+cd ../
+echo "XSStrike installed!"
+
+echo "Installing Ysoserial..."
+sudo git clone https://github.com/frohoff/ysoserial
+cd ysoserial/
+sudo wget https://jitpack.io/com/github/frohoff/ysoserial/master-SNAPSHOT/ysoserial-master-SNAPSHOT.jar
+sudo mvn clean package -DskipTests
+cd ../
+echo "Ysoserial installed! Please check to ensure Java is installed to run the tool."
 
 echo "Installing Aquatone..."
 sudo gem install aquatone
