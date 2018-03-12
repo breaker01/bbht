@@ -7,7 +7,7 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [230-OOB](https://github.com/sxcurity/230-OOB)
 - [Alive-Host](https://github.com/sxcurity/alive-host)
 - [Aquatone](https://github.com/michenriksen/aquatone)
-- [AWSCLI](https://aws.amazon.com/cli/)
+- [AWS CLI](https://aws.amazon.com/cli/)
 - [BFAC](https://github.com/mazen160/bfac)
 - [C5Scan](https://github.com/auraltension/c5scan)
 - [Clusterd](https://github.com/hatRiot/clusterd)
