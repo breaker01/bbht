@@ -21,6 +21,7 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [JoomScan](https://github.com/rezasp/joomscan)
 - [JS-Scan](https://github.com/zseano/JS-Scan)
 - [JSParser](https://github.com/nahamsec/JSParser)
+- [Lazyrecon](https://github.com/JR0ch17/lazyrecon)
 - [Liffy](https://github.com/hvqzao/liffy)
 - [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
 - [Nikto](https://cirt.net/nikto)
