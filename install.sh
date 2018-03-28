@@ -109,8 +109,12 @@ cd ../
 echo "JSParser installed!"
 
 echo "Installing JS-Scan..."
-sudo git clone cd https://github.com/zseano/JS-Scan
+sudo git clone https://github.com/zseano/JS-Scan
 echo "JS-Scan installed!"
+
+echo "Installing Lazyrecon..."
+sudo git clone https://github.com/JR0ch17/lazyrecon
+echo "Lazyrecon installed!"
 
 echo "Installing LinkFinder..."
 sudo git clone https://github.com/GerbenJavado/LinkFinder
