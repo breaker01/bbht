@@ -49,8 +49,7 @@ echo "C5Scan installed!"
 
 echo "Installing Clusterd..."
 sudo git clone https://github.com/hatRiot/clusterd
-echo "Clustered installed!"
-
+echo "Clustered installed
 echo "Installing CMSFuzz..."
 sudo git clone https://github.com/nahamsec/CMSFuzz
 sudo chmod +x CMSFuzz/dirbf.rb
@@ -173,7 +172,7 @@ sudo git clone https://github.com/TheRook/subbrute
 echo "SubBrute installed!"
 
 echo "Installing Sublist3r"
-git clone https://github.com/aboul3la/Sublist3r
+sudo git clone https://github.com/aboul3la/Sublist3r
 cd Sublist3r/
 sudo pip install -r requirements.txt
 cd ../
