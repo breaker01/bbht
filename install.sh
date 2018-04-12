@@ -19,7 +19,8 @@ echo "Libraries, Ruby, PHP, etc installed!"
 echo "Ready to install tools..."
 
 echo "Installing AWSCLI..."
-pip install awscli
+sudo pip install awscli
+sudo apt-get install awscli
 echo "AWS CLI installed!"
 echo "Don't forget to set up AWS credentials using the `aws configure` command!"
 
