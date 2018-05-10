@@ -53,8 +53,8 @@ Make sure you manually install Go before running this tool. You can view the Go 
 
 Run the following commands:
 ```
-git clone https://github.com/JR0ch17/bbht
-cd bbht/
-chmod +x install.sh
-./install.sh
+$ git clone https://github.com/JR0ch17/bbht
+$ cd bbht/
+$ chmod +x install.sh
+$ ./install.sh
 ```
