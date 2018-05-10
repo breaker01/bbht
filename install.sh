@@ -36,6 +36,10 @@ sudo git clone https://github.com/sxcurity/alive-host
 sudo chmod +x alive-host/alive.sh
 echo "Alive-Host installed!"
 
+echo "Installing amass..."
+sudo snap install amass
+echo "amass installed!"
+
 echo "Installing BFAC..."
 sudo git clone https://github.com/mazen160/bfac
 cd bfac/
