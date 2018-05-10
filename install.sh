@@ -146,11 +146,11 @@ sudo chmod +x nikto-2.1.5/*.pl
 sudo perl nikto-2.1.5/nikto.pl -update
 echo "Nikto installed!"
 
-echo "Installing Nmap 7.60..."
+echo "Installing Nmap 7.70..."
 sudo apt-get install alien
-sudo wget https://nmap.org/dist/nmap-7.60-1.x86_64.rpm
-sudo alien nmap-7.60-1.x86_64.rpm
-sudo dpkg --install nmap_7.60-2_amd64.deb
+sudo wget https://nmap.org/dist/nmap-7.70-1.x86_64.rpm
+sudo alien nmap-7.70-1.x86_64.rpm
+sudo dpkg --install nmap_7.70-2_amd64.deb
 sudo rm nmap*
 echo "Nmap installed!"
 
