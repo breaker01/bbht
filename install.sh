@@ -196,6 +196,13 @@ sudo pip install -r requirements.txt
 cd ../
 echo "Sublist3r installed!"
 
+echo "Installing Subover..."
+sudo git clone https://github.com/Ice3man543/SubOver
+cd SubOver
+go build subover.go
+cd ../
+echo "SubOver installed!"
+
 echo "Installing Tomcat-CVE-2017-12617..."
 sudo git clone https://github.com/cyberheartmi9/CVE-2017-12617
 sudo chmod +x CVE-2017-12617/tomcat-cve-2017-12617.py
