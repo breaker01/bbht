@@ -16,7 +16,9 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [DomainWatch](https://github.com/ebelties/DomainWatch)
 - [DroopeScan](https://github.com/droope/droopescan)
 - [EyeWitness](https://github.com/ChrisTruncer/EyeWitness)
+- [GitLeaks](https://github.com/zricethezav/gitleaks)
 - [GitTools](https://github.com/internetwache/GitTools)
+- [GoBuster](https://github.com/OJ/gobuster)
 - [HostileSubBruteforcer](https://github.com/nahamsec/HostileSubBruteforcer)
 - [JoomScan](https://github.com/rezasp/joomscan)
 - [JS-Scan](https://github.com/zseano/JS-Scan)
@@ -45,6 +47,8 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 
 
 ## Installing
+Make sure you manually install Go before running this tool. You can view the Go docs [here](https://golang.org/doc/install).
+
 Run the following commands:
 ```
 git clone https://github.com/JR0ch17/bbht
