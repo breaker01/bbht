@@ -20,6 +20,7 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [GitTools](https://github.com/internetwache/GitTools)
 - [GoBuster](https://github.com/OJ/gobuster)
 - [HostileSubBruteforcer](https://github.com/nahamsec/HostileSubBruteforcer)
+- [InputScanner](https://github.com/zseano/InputScanner)
 - [JoomScan](https://github.com/rezasp/joomscan)
 - [JS-Scan](https://github.com/zseano/JS-Scan)
 - [JSParser](https://github.com/nahamsec/JSParser)
