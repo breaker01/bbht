@@ -80,16 +80,25 @@ sudo pip3 install -r requirements.txt
 cd ../
 echo "Fuxploider installed!"
 
+echo "Installing GitLeaks..."
+sudo git clone https://github.com/zricethezav/gitleaks
+cd gitleaks
+go get -u github.com/zricethezav/gitleaks
+go build github.com/zricethezav/gitleaks
+cd ../
+echo "GitLeaks installed!"
+
 echo "Installing GitTools..."
 sudo git clone https://github.com/internetwache/GitTools
 echo "GitTools installed!"
 
-#echo "Installing GoBuster...!"
-#sudo git clone https://github.com/OJ/gobuster
-#sudo apt-get install golang-go
-#sudo wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz
-#sudo tar -C /usr/local/ -xzf go1.9.2.linux-amd64.tar.gz
-#cd gobuster
+echo "Installing GoBuster...!"
+sudo git clone https://github.com/OJ/gobuster
+cd gobuster
+go get github.com/OJ/gobuster
+go build github.com/OJ/gobuster
+cd ../
+echo "GoBuster installed!"
 
 echo "Installing HostileSubBruteforcer..."
 sudo git clone https://github.com/nahamsec/HostileSubBruteforcer
@@ -171,6 +180,14 @@ echo "Struts-pwn installed!"
 echo "Installing Subbrute..."
 sudo git clone https://github.com/TheRook/subbrute
 echo "SubBrute installed!"
+
+echo "Installing Subfinder..."
+sudo git clone https://github.com/Ice3man543/subfinder
+cd subfinder
+go get github.com/Ice3man543/subfinder
+go build github.com/Ice3man543/subfinder
+cd ../
+echo "Subfinder installed!"
 
 echo "Installing Sublist3r"
 sudo git clone https://github.com/aboul3la/Sublist3r
