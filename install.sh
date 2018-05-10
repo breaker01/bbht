@@ -105,6 +105,10 @@ sudo git clone https://github.com/nahamsec/HostileSubBruteforcer
 sudo chmod +x HostileSubBruteforcer/sub_brute.rb
 echo "HostileSubBruteForcer installed!"
 
+echo "Installing InputScanner..."
+sudo git clone https://github.com/zseano/InputScanner
+echo "InputScanner installed!"
+
 echo "Installing JoomScan..."
 sudo git clone https://github.com/rezasp/joomscan
 echo "JoomScan installed!"
