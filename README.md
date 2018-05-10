@@ -32,6 +32,7 @@ Bug Bounty Hunting Tools is a script to install some of the most popular tools u
 - [SQLMap](https://github.com/sqlmapproject/sqlmap)
 - [struts-pwn](https://github.com/mazen160/struts-pwn)
 - [Subbrute](https://github.com/TheRook/subbrute)
+- [Subfinder](https://github.com/Ice3man543/subfinder)
 - [Sublist3r](https://github.com/aboul3la/Sublist3r)
 - [Tomcat-CVE-2017-12617](https://github.com/cyberheartmi9/CVE-2017-12617)
 - [Tplmap](https://github.com/epinna/tplmap)
